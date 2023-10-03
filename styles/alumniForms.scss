@@ -1,0 +1,1401 @@
+// ---- Top Level Basic Styles ---- //
+
+#alumni-forms .italic{
+  font-style: italic;
+}
+
+#alumni-forms.rif-form h2 {
+  color: #19191A;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: -10px;
+  text-align: center;
+}
+
+#alumni-forms h4 {
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 1em;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+#alumni-forms h5 {
+  color: #222222;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+#alumni-forms p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+#alumni-forms button.skip-login {
+  font-size: 16px;
+  color: #256EC1;
+  cursor: pointer;
+}
+
+#alumni-forms button.skip-login:hover {
+  text-decoration: underline;
+}
+
+#alumni-forms.rif-form .us-state-dropdown {
+  width: 90%;
+}
+
+// Overriding mobile GH Stylesheet. Important must be set here in order to override styles from GH
+
+@media (max-width: 599px) {
+  #alumni-forms #appMenu__uMR5d .appMenu__buttonInnerPath_light__1DdVM {
+    fill: #1b2c56 !important;
+  }
+}
+
+// Basic Styles: Container Styles 
+
+#alumni-forms section {
+  padding: 0;
+  border: 0
+}
+
+#alumni-forms .row {
+  margin-bottom: 32px;
+  display: block;
+  width: 35em;
+}
+
+#alumni-forms .container.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+
+#alumni-forms img {
+  align-self: center;
+  flex-direction: column;
+}
+
+// Header styles
+
+#alumni-forms.rif-form .heading {
+  height: 72px;
+  margin: 0 auto;
+  position: static;
+  background-color: #1B2C56;
+  width: 100%;
+}
+
+#alumni-forms.rif-form .wordmark {
+  margin-left: 15px;
+  padding-top: 25px;
+  margin-top: 0px;
+}
+
+// Loading Screen Styles
+#alumni-forms .user-loading {
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 380px;
+  margin: 100px auto auto;
+  overflow:hidden;
+}
+
+#alumni-forms .user-loading h2 {
+  line-height: 36px;
+  font-size: 22px;
+}
+
+#alumni-forms .user-loading .loading-box {
+  max-width: 520px;
+  margin: auto;
+}
+
+#alumni-forms .loading-spinner {
+  font-size: 10px;
+  margin: 50px auto;
+  text-indent: -9999em;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #0059C0;
+  background: -moz-linear-gradient(left, #0059C0 10%, rgba(255, 255, 255, 0) 42%);
+  background: -webkit-linear-gradient(left, #0059C0 10%, rgba(255, 255, 255, 0) 42%);
+  background: -o-linear-gradient(left, #0059C0 10%, rgba(255, 255, 255, 0) 42%);
+  background: -ms-linear-gradient(left, #0059C0 10%, rgba(255, 255, 255, 0) 42%);
+  background: linear-gradient(to right, #0059C0 10%, rgba(255, 255, 255, 0) 42%);
+  position: relative;
+  -webkit-animation: spinClockwise 1.4s infinite linear;
+  animation: spinClockwise 1.4s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+#alumni-forms .loading-spinner:before {
+  background: #eef3f9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+}
+#alumni-forms .loading-spinner:after {
+  background: #eef3f9;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+@-webkit-keyframes spinClockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinClockwise {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+// ----  Main Form Styles ---- //
+#alumni-forms.rif-form fieldset {
+  overflow:visible;
+}
+
+#alumni-forms h2.form-title {
+  text-align: left;
+  font-size: 32px;
+}
+
+#alumni-forms.rif-form p {
+  color: #222222;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+#alumni-forms input:not([type=submit]),
+#alumni-forms select,
+#alumni-forms textarea, 
+#alumni-forms input[type=text]  {
+  background-color: #FFF;
+  line-height: 24px;
+  padding: 10px 16px;
+}
+
+
+#alumni-forms textarea{
+  height: 170px;
+}
+
+#alumni-forms input:not([type=submit]):focus,
+#alumni-forms select:focus,
+#alumni-forms textarea:focus,
+#alumni-forms label.radio:focus{
+  border: 1px solid #1F6CC4;
+  outline: 2px solid #1F6CC4;
+  border-radius: 2px;
+}
+
+#alumni-forms.rif-form .us-states {
+  width: 365px;  
+}
+
+#alumni-forms .label, #alumni-forms label {
+  color: #222;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+#alumni-forms .required-indicator {
+  color: #CD092D;
+  margin-left: 2px;
+}
+
+#alumni-forms.rif-form .hasSuccess {
+  border: 1px solid #e1e1e1!important;
+}
+
+#alumni-forms.rif-form .form-group {
+  flex: 1 0 300px;
+}
+
+#alumni-forms.rif-form select {
+  color: #000;
+}
+
+#alumni-forms.rif-form .address2,
+#alumni-forms.rif-form .luidexample {
+  color: #747676;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 14px;
+  margin-top: 2px;
+}
+
+#alumni-forms.rif-form .start-rif {
+  max-width: 482px;
+}
+
+#alumni-forms.rif-form .alternate-login {
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: -7px;
+}
+
+#alumni-forms.rif-form .half-bottom-margin {
+  margin-bottom: 10px; 
+}
+
+#alumni-forms.rif-form .first-step  h5,
+#alumni-forms.rif-form .second-step h5 {
+  margin-bottom: 8px;
+}
+
+#alumni-forms.rif-form .first-step  p,
+#alumni-forms.rif-form .second-step  p {
+  margin-bottom: 16px;
+}
+
+#alumni-forms.rif-form .phone-group  p,
+#alumni-forms.rif-form .email-group  p {
+  margin-bottom: 0;
+}
+
+#alumni-forms.rif-form .first-step input[type=text],
+#alumni-forms.rif-form .first-step input[type=tel],
+#alumni-forms.rif-form .first-step input[type=number],
+#alumni-forms.rif-form .first-step input[type=email],
+#alumni-forms.rif-form .first-step input[type=date] {
+  padding: 12px 16px;
+  border: 1px solid #C6C7C9;
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+}
+
+#alumni-forms.rif-form select  {
+  padding: 12px 16px;
+  border: 1px solid #C6C7C9;
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 19px;
+  margin-right: 20px;
+}
+
+#alumni-forms.rif-form .first-step span.label {
+  color: #222222;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+}
+
+#alumni-forms.rif-form .first-step .lastname-suffix {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+#alumni-forms.rif-form .first-step .text.maiden-name-input {
+  margin-top: 16px;
+}
+
+#alumni-forms.rif-form .first-step input[name=email] {
+  width: 473px;
+}
+
+#alumni-forms.rif-form .first-step input[name=libertyuid] {
+  width: 470px;
+}
+
+#alumni-forms.rif-form .first-step input[name=phone] {
+  width: 217px;
+}
+
+#alumni-forms.rif-form .first-step input[name=middlename], 
+#alumni-forms.rif-form .first-step input[name=maidenname] {
+  //width: 340px;
+}
+
+#alumni-forms.rif-form .first-step input[name=firstname],
+#alumni-forms.rif-form .first-step input[name=lastname],
+#alumni-forms.rif-form .first-step input[name=bday],
+#alumni-forms.rif-form .second-step input[name=state] {
+  width: 230px;
+  margin-right: 25px;
+}
+
+
+#alumni-forms.rif-form .first-step .lastname-suffix #suffix {
+  margin-left: 15px;
+  width: 130px;
+}
+
+#alumni-forms.rif-form .first-step .lastname-suffix span.label:nth-child(2) {
+  margin-left: 15px;
+}
+
+#alumni-forms.rif-form .second-step input[name=address1]
+ {
+  width: 470px;
+}
+
+#alumni-forms.rif-form .second-step input[name=city],
+#alumni-forms.rif-form .second-step #country,
+#alumni-forms.rif-form .second-step #stateGen,
+#alumni-forms.rif-form .second-step .columns.six.mobile-twelve.address-style
+ {
+  width: 470px;
+}
+
+#alumni-forms.rif-form .second-step input[name=zip] {
+  //width: 140px;
+}
+
+#alumni-forms.rif-form .second-step  {
+  margin-top: 56px;
+}
+
+#alumni-forms.rif-form .second-step input {
+border: 1px solid #c6c7c9;   
+border-radius: 2px;
+}
+
+#alumni-forms form input[type=submit] {
+  box-shadow: none;
+  height: 48px;
+  width: 470px;
+  border-radius: 2px;
+  background-color: #256EC1;
+  text-transform: unset;
+  font-weight: 400;
+  margin: 20px auto -5px;
+}
+
+li.question-message {
+    line-height: 20px;
+    max-width: 470px;
+    margin-bottom: 15px;
+}
+
+#alumni-forms form input[type=submit]:focus, 
+#alumni-forms form input[type=submit]:hover {
+  background-color: #1C2840;
+  text-decoration: unset;
+}
+
+#alumni-forms .privacy-section {
+  width: 470px;
+}
+
+// Form: Error-box styling 
+
+#alumni-forms.rif-form .error-box {
+  box-sizing: border-box;
+  border: 1px solid #AE0023;
+  background-color: #FFEDF0;
+  padding: 16px 16px 20px;
+  margin-bottom: 50px;
+  max-width: 504px;
+  margin: auto;
+  width: 50%;
+}
+
+#alumni-forms.rif-form .error-box.form {
+  margin: auto 0 55px;
+  width: 100%;
+}
+
+#alumni-forms.rif-form .error-box.form li {
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 26px;
+  margin-left: 20px;
+}
+
+#alumni-forms.rif-form .hide,
+#alumni-forms.rif-form .error-box.form.hide, 
+#alumni-forms.rif-form .error-box.form .hide, 
+#alumni-forms.rif-form .row.add-bottom-margin.hide {
+  display: none;
+}
+
+/* Remove min and max number arrows on Chrome, Safari, Edge, Opera */
+#alumni-forms input::-webkit-outer-spin-button,
+#alumni-forms input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Remove min and max number arrows on Firefox */
+#alumni-forms input[type=number] {
+-moz-appearance: textfield;
+}
+
+/* Change Autocomplete styles in Chrome*/
+#alumni-forms input:-webkit-autofill,
+#alumni-forms input:-webkit-autofill:hover,
+#alumni-forms input:-webkit-autofill:focus,
+#alumni-forms textarea:-webkit-autofill,
+#alumni-forms textarea:-webkit-autofill:hover,
+#alumni-forms textarea:-webkit-autofill:focus,
+#alumni-forms select:-webkit-autofill,
+#alumni-forms select:-webkit-autofill:hover,
+#alumni-forms select:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+// fix iOS safari disabled preset styles
+#alumni-forms.rif-form .first-step input:disabled {
+  color: #19191A;
+  -webkit-text-fill-color: #19191A;
+  opacity: 1; 
+}
+
+// fix iOS safari extra rounded corners on submit button
+#alumni-forms form input[type=submit] {
+  -webkit-appearance: none; 
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+
+// Specific Screen Stylings
+
+#alumni-forms .btn.blue:focus, 
+#alumni-forms .btn.blue:hover {
+  background-color: #1C2840;
+  text-decoration: unset;
+}
+
+#alumni-forms.rif-form .container.issue h2 {
+  margin-bottom: 0;
+}
+
+#alumni-forms.rif-form .container.issue .error-box {
+  margin: 20px auto 30px;
+}
+
+#alumni-forms.rif-form .container.submitted h2 {
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+#alumni-forms.rif-form .container.submitted .process-message {
+  margin-top: 15px;  
+}
+
+#alumni-forms.rif-form .container.submitted .success-messages {
+  max-width: 605px;
+  margin: -15px auto auto;
+}
+
+#alumni-forms.rif-form .container.submitted .success-messages p {
+font-size: 1.2em;
+}
+
+#alumni-forms.rif-form .main-rif-form {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+
+#alumni-forms.rif-form .main-rif-form h3.fullname {
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+#alumni-forms.rif-form .text-center li {
+  text-align: center;
+  margin-top: -15px;
+}
+
+#alumni-forms.rif-form .receive-id {
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#alumni-forms.rif-form .info-box {
+  box-sizing: border-box;
+  border: 1px solid #C6C7C9;
+  background-color: #F2F8FF;
+  padding-top: 36px;
+  max-width: 605px;
+  margin: 25px auto 25px;
+  width: 75%;
+  text-align: center;
+}
+
+#alumni-forms.rif-form .info-box h3 {
+  font-size: 16px;
+}
+
+#alumni-forms.rif-form .container.submitted p.new-request {
+  width: 100%;
+  font-size: 16px;
+  font-family: Roboto;
+  margin: -10px auto 20px;
+}
+
+#alumni-forms.rif-form .info-box .new-id-card {
+  margin: -5px auto 35px;
+}
+
+#alumni-forms.rif-form .info-box .questions-group {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#alumni-forms.rif-form .info-box p {
+  font-size: 16px;
+}
+
+#alumni-forms.rif-form .links-group a.btn {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#alumni-forms.rif-form #mainStart .btn.blue {
+  height: 54px;
+  width: 230px;
+}
+
+#alumni-forms.rif-form .container.login li.please-note {
+  width: 80%;
+  max-width: 294px;
+  font-size: 16px;
+  font-family: Roboto;
+  font-style: italic;
+  margin: 0 0 1em;
+}
+
+#alumni-forms.rif-form .offline .questions-group {
+  text-align: center;
+  margin-top: 50px;
+}
+
+#alumni-forms.rif-form form:not(.main-rif-form) .questions-group ul {
+  text-align: center;
+}
+
+#alumni-forms form:not(.main-rif-form) .questions-group {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#alumni-forms form:not(.main-rif-form) .links-group {
+margin: 25px auto -15px;
+}
+
+#alumni-forms a.btn.blue {
+  text-transform: unset;
+  color: #fff;
+  padding: 14px 0;
+  font-weight: 400;
+  font-size: 13px;
+  background-color: #256EC1;
+}
+
+#alumni-forms .btn.large {
+  width: 350px;
+  max-width: 100%;
+  box-sizing: border-box; 
+  line-height: 45px;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+#alumni-forms .btn.ghost.previous {
+  background-color: #256EC1;
+}
+
+#alumni-forms .btn.blue:focus, #alumni-forms .btn.blue:hover {
+  background-color: #1C2840;
+  text-decoration: unset;
+}
+
+#alumni-forms .btn.ghost:focus {
+  border: 1px solid #3b99fb;
+}
+
+#alumni-forms .btn.ghost.arrow-left:before {
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-top: 2px solid #2773CB;
+  border-left: 2px solid #2773CB;
+  transform: rotate(-45deg);
+  margin-right: 5px;
+  margin-bottom: 1px;
+  content: '';
+  box-sizing: border-box;
+}
+
+#alumni-forms .blue.arrow:after,
+#alumni-forms .blue.arrow:before {
+  border-color: #FFF;
+}
+
+
+#alumni-forms .text-right {
+  text-align: right;
+}
+
+#alumni-forms .text-left {
+  text-align: left;
+}
+
+#alumni-forms .error-text h3 {
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+#alumni-forms .error-text p {
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+}
+
+#alumni-forms .pull-right {
+  float: right;
+}
+
+#alumni-forms .no-top-margin {
+  margin-top: 0;
+}
+
+#alumni-forms .bottom-margin {
+  margin-bottom: 15px;
+}
+
+#alumni-forms .no-bottom-margin {
+  margin-bottom: 0;
+}
+
+#alumni-forms .top-margin {
+  margin-top: 15px;
+}
+
+#alumni-forms .row.flex-gap {
+  justify-content: flex-start;
+}
+
+#alumni-forms .row.flex-gap .columns {
+  margin-left: 24px;
+  margin-bottom: 32px;
+}
+
+#alumni-forms .row.flex-gap .columns.no-left-margin {
+  margin-left: 0;
+}
+
+#alumni-forms .row.flex-gap .columns:first-of-type {
+  margin-left: 0;
+}
+
+#alumni-forms .row.less_space {
+  justify-content: normal;
+}
+
+#alumni-forms .row.less_space .columns {
+  margin-right: 24px
+}
+
+#alumni-forms .drop_down {
+  top: 65%;
+  z-index: 1;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+}
+
+#alumni-forms.rif-form ul:not(.specific-errors) {
+  list-style: none;
+  padding: 0;
+}
+
+#alumni-forms.rif-form .error-box.form ul {
+  list-style: disc;
+  margin: 0;
+  padding: 0;
+}
+
+#alumni-forms.rif-form .container.submitted {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+#alumni-forms.rif-form .sign-in-text {
+  margin: -25px auto 45px;
+  width: 100%;
+  text-align: center;
+}
+
+#alumni-forms.rif-form .links-group {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 770px;
+  width: 100%;
+  text-align: center;
+  margin: 15px auto -10px;
+}
+
+#alumni-forms.rif-form .links-group ul {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#alumni-forms.rif-form .links-group li {
+  width: 350px;
+  max-width: 100%;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#alumni-forms.rif-form .links-group a {
+  width: 100%;
+}
+
+#alumni-forms.rif-form .questions-group {
+  flex: 1 0 230px;
+  text-align: left;
+}
+
+#alumni-forms label.active:before {
+  content: " ";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -7px;
+  right: 5px;
+  bottom: 45px;
+  border-left: 2px solid #CD092D;
+}
+
+#alumni-forms .errormessage {
+  display: none;
+  color: #CD092D;
+  font-size: 1em; 
+}
+
+#alumni-forms span.errormessage.active {
+  display: block;
+}
+
+#alumni-forms label input:focus+span,label input:valid+span {
+  top: 100%!important;
+  padding-top: 0;
+}
+
+#alumni-forms.rif-form .offline,
+#alumni-forms.rif-form .container.issue {
+  margin-top: 75px;
+  width: 100%;
+  padding: 0;
+}
+
+#alumni-forms.rif-form .offline p {
+  line-height: 26px;
+}
+
+#alumni-forms .white-box-shadow {
+  background-color: #eef3f9;
+  border-radius: 4px;
+  padding: 40px;
+  margin-bottom: 50px;
+}
+
+#alumni-forms.rif-form .container.login .white-box-shadow {
+  padding: 131px 40px 15px;
+}
+
+#alumni-forms.rif-form .container.start {
+  padding: 60px 40px 15px;
+}
+
+#alumni-forms.rif-form .questions-group {
+  text-align: center;
+  margin-bottom: 36px;
+  margin-top: 50px;
+}
+
+#alumni-forms.rif-form .phone-group, #alumni-forms .email-group {
+  display: inline-flex;
+}
+
+#alumni-forms.rif-form .phone-icon, #alumni-forms .email-icon {
+  margin-right: 15px;
+}
+
+#alumni-forms .white-box-shadow ol li {
+  text-align: left;
+  list-style: decimal;
+  margin-left: 2em;
+}
+
+#alumni-forms .double-row {
+  display: flex;
+  width: 470px;
+  grid-gap: 0;
+}
+
+#alumni-forms input[type=checkbox] {
+  width: 20px;
+  height: auto;
+}
+
+#alumni-forms .double-row .privacy-agreement {
+  margin-left: 15px;
+  margin-top: 20px;
+  font-family: 'Roboto Light', sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+  min-width: 330px;
+  height: 117px;
+  width: auto;
+  color: #222222;
+  margin-bottom: -35px;
+}
+
+#alumni-forms.rif-form .form_label_wrapper{
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1380px) {
+  #alumni-forms.rif-form .container.login .white-box-shadow, 
+  #alumni-forms.rif-form .container.issue {
+    padding: 85px 0 0;
+  }
+}
+
+@media (max-width: 1225px) {
+  /*override sitewide style that breaks these forms since they dont have the header used on the rest of the site. it used important, so override has to use it too, along with higher specificity*/
+  html body{
+    margin-top: 0 !important
+  }
+}
+
+@media (max-width: 1150px) {
+  #alumni-forms h2.form-title {
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #alumni-forms.rif-form .start-rif {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #alumni-forms.rif-form .container.login .white-box-shadow, 
+  #alumni-forms.rif-form .container.issue {
+    padding: 25px 0 0;
+  }
+
+  #alumni-forms .columns.nine,
+  #alumni-forms .columns.three {
+    width: 100%;
+  }
+
+  #alumni-forms .row.flex-gap .columns {
+    margin-left: 0;
+  }
+
+  #alumni-forms .row.less_space {
+    justify-content: space-between;
+  }
+
+  #alumni-forms .columns.mobile-one {
+    width: 5.9%
+  }
+
+  #alumni-forms .columns.mobile-two {
+    width: 14.45555556%
+  }
+
+  #alumni-forms .columns.mobile-three {
+    width: 23%
+  }
+
+  #alumni-forms .columns.mobile-four {
+    width: 31.56666667%
+  }
+
+  #alumni-forms .columns.mobile-five {
+    width: 40.66666667%
+  }
+
+  #alumni-forms .columns.mobile-six {
+    width: 48.66666667%
+  }
+
+  #alumni-forms .columns.mobile-seven {
+    width: 56.66666667%
+  }
+
+  #alumni-forms .columns.mobile-eight {
+    width: 65.78%
+  }
+
+  #alumni-forms .columns.mobile-nine {
+    width: 74.33333333%
+  }
+
+  #alumni-forms .columns.mobile-ten {
+    width: 82.8%
+  }
+
+  #alumni-forms .columns.mobile-eleven {
+    width: 92.66666667%
+  }
+
+  #alumni-forms .columns.mobile-twelve {
+    width: 100%;
+    margin-left: 0
+  }
+
+  #alumni-forms .form_label_wrapper {
+    margin-bottom: 16px !important;
+  }
+
+  #alumni-forms .row {
+    margin-bottom: 15px;
+  }
+
+  #alumni-forms .row.less_space {
+    margin-bottom: 0;
+  }
+
+  #alumni-forms .heading ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #alumni-forms .heading ul li:last-child {
+    margin: auto;
+  }
+
+  .form_label_wrapper:first-of-type {
+    margin-bottom: 25px !important;
+  }
+
+}
+
+@media (max-width: 768px ) {
+  .form-submit-section{
+    width: auto;
+  }
+
+  .privacy-section.double-row  {
+    margin-top: 20px;
+    display: flex !important;
+    width: 90vw;
+  }
+
+  #alumni-forms .row {
+    //width: unset;
+  }
+
+  #alumni-forms.rif-form h2 {
+    margin-top: 5px;
+  }
+
+  #alumni-forms .container {
+    padding: 0 16px;
+  }
+  #alumni-forms h1 {
+    font-size: 18px;
+  }
+  #alumni-forms h2 {
+  color: #19191A;
+  font-family: Roboto;
+  font-size: 28px;
+  letter-spacing: 0;
+  line-height: 40px;
+  }
+
+  #alumni-forms.rif-form .container.login p.receive-id {
+    margin-top: 15px;
+  }
+
+  #alumni-forms.rif-form .container.login li.please-note {
+    width: 100%;
+    margin: 0 auto 25px;
+  }
+
+  #alumni-forms.rif-form .container.submitted h2 {
+    font-size: 28px;
+    margin-top: 15px;
+  }
+  
+  #alumni-forms.rif-form .info-box {
+    box-sizing: border-box;
+    border: 1px solid #C6C7C9;
+    background-color: #F2F8FF;
+    padding: 30px auto 0px;
+    margin: 35px auto 75px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #alumni-forms.rif-form .container.offline .error-box {
+    width:100%;
+  }
+
+  #alumni-forms.rif-form .container.submitted .success-messages {
+    margin: auto;
+  }
+
+  #alumni-forms.rif-form .container.submitted .process-message {
+    margin-top: 25px;
+  }
+
+  #alumni-forms.rif-form form:not(.main-rif-form) .questions-group {
+    margin-top: 30px;
+  }
+
+  #alumni-forms.rif-form .links-group ul,
+  #alumni-forms.rif-form .questions-group ul {
+    margin-bottom: 0;   
+  }
+
+  #alumni-forms.rif-form .links-group {
+    display: block;
+  }
+
+  #alumni-forms.rif-form .links-group li {
+    margin: 0;
+  }
+
+  #alumni-forms .user-loading {
+    margin-top: 25px;
+  }
+  
+  #alumni-forms .user-loading h2 {
+    color: #19191A;
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 36px;
+  }
+
+  #alumni-forms.rif-form .container.issue .text-center li {
+    margin: 10px 0 1.5em;
+  }
+
+  #alumni-forms.rif-form .container.issue .error-box {
+    width: 85%;
+  }
+
+  #alumni-forms .row.less_space .columns {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  #alumni-forms .row.flex-gap .columns {
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 16px;
+  }
+
+  #alumni-forms.rif-form .links-group ul {
+    flex-direction: column-reverse;
+  }
+
+  #alumni-forms input,
+  #alumni-forms select {
+    max-width: 100%;
+  }
+
+  #alumni-forms .center-small {
+    text-align: center;
+  }
+
+  #alumni-forms.rif-form .offline {
+    margin-top: 56px;
+    max-width: 635px;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #alumni-forms a[href^="tel:"] {
+    display: block;
+  }
+
+  #alumni-forms.rif-form a[href^="tel:"] {
+    display: inline-block;
+  }
+
+  #alumni-forms.rif-form .container .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #alumni-forms .white-box-shadow {
+    padding: 30px 15px;
+  }
+
+  #alumni-forms.rif-form form[name=form] h2 {
+    font-size: 2em;
+  }
+
+  #alumni-forms.rif-form .offline .error-box h2:before {
+    content: '';
+  }
+
+  #alumni-forms.rif-form .offline .error-box h2 {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  #alumni-forms.rif-form .submitted h2:before {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  #alumni-forms .start-rif {
+      max-width: 100%;
+  }
+  #alumni-forms .double-row {
+    display: block;
+  }
+
+  #alumni-forms.rif-form .first-step input[name=email],
+  #alumni-forms.rif-form .first-step input[name=firstname],
+  #alumni-forms.rif-form .first-step input[name=middlename],
+  #alumni-forms.rif-form .first-step input[name=maidenname],  
+  #alumni-forms.rif-form select[name=country],
+  #alumni-forms.rif-form .second-step input[name=address1],
+  #alumni-forms.rif-form .second-step input[name=city], 
+  #alumni-forms.rif-form .second-step .columns.six.mobile-twelve.address-style, 
+  #alumni-forms.rif-form .text.country,  
+  #alumni-forms.rif-form .text.state,
+  #alumni-forms.rif-form .second-step #stateGen,
+  #alumni-forms.rif-form .first-step input[name=libertyuid],
+  #alumni-forms.rif-form .first-step input[name=lastname],
+  #alumni-forms .double-row,
+  #alumni-forms.rif-form .first-step input[name=bday],
+  #alumni-forms.rif-form .first-step input[name=phone],
+  #alumni-forms.rif-form .second-step input[name=state],
+  #alumni-forms.rif-form .second-step #country {  
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    overflow-x: hidden;
+  }
+  #alumni-forms {
+    overflow-x: hidden;
+  }
+
+  #alumni-forms.rif-form .first-step input[name=email],
+  #alumni-forms.rif-form .first-step input[name=firstname],
+  #alumni-forms.rif-form .first-step input[name=middlename],
+  #alumni-forms.rif-form .first-step input[name=lastname],
+  #alumni-forms.rif-form .first-step input[name=maidenname],  
+  #alumni-forms.rif-form select[name=country],
+  #alumni-forms.rif-form .second-step input[name=address1],
+  #alumni-forms.rif-form .second-step input[name=city], 
+  #alumni-forms.rif-form .second-step .columns.six.mobile-twelve.address-style, 
+  #alumni-forms.rif-form .text.country,  
+  #alumni-forms.rif-form .text.state,
+  #alumni-forms.rif-form .second-step #stateGen,
+  #alumni-forms.rif-form .first-step input[name=libertyuid],
+  #alumni-forms.rif-form .first-step input[name=lastname],
+  #alumni-forms .double-row,
+  #alumni-forms.rif-form .first-step input[name=bday],
+  #alumni-forms.rif-form .first-step input[name=phone],
+  #alumni-forms.rif-form .second-step input[name=state],
+  #alumni-forms.rif-form .second-step select[name=country],
+  #alumni-forms.rif-form .second-step input[type=submit],
+  .question-message, 
+  .first-step legend p {  
+    width: 100%;
+  }
+
+  #alumni-forms.rif-form input#lastname, 
+  #alumni-forms.rif-form input#state {
+      width: 100% !important;
+  }
+
+  #alumni-forms .double-row .privacy-agreement {
+    margin-bottom: 0;
+  }
+
+  #alumni-forms .container.form { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 590px) {
+  #alumni-forms img {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  #alumni-forms.rif-form .first-step input[name=email],
+  #alumni-forms.rif-form .first-step input[name=firstname],
+  #alumni-forms.rif-form .first-step input[name=middlename],
+  #alumni-forms.rif-form .first-step input[name=lastname],
+  #alumni-forms.rif-form .first-step input[name=maidenname],  
+  #alumni-forms.rif-form select[name=country],
+  #alumni-forms.rif-form .second-step input[name=address1],
+  #alumni-forms.rif-form .second-step input[name=city], 
+  #alumni-forms.rif-form .second-step .columns.six.mobile-twelve.address-style, 
+  #alumni-forms.rif-form .text.country,  
+  #alumni-forms.rif-form .text.state,
+  #alumni-forms.rif-form .second-step #stateGen,
+  #alumni-forms.rif-form .first-step input[name=libertyuid],
+  #alumni-forms.rif-form .first-step input[name=lastname],
+  #alumni-forms .double-row,
+  #alumni-forms.rif-form .first-step input[name=bday],
+  #alumni-forms.rif-form .first-step input[name=phone],
+  #alumni-forms.rif-form .second-step input[name=state],
+  #alumni-forms.rif-form .second-step select[name=country],
+  #alumni-forms.rif-form .second-step input[type=submit],
+  .question-message, 
+  .first-step legend p,
+  .second-step legend p {  
+    width: 90vw;
+  }
+
+  #alumni-forms.rif-form > input{
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:500px) {
+  .text-center > li,
+  .text-center > h2 {
+    text-align: left !important;
+  }
+
+  #alumni-forms.rif-form .rif-container-wrapper {
+    width: 350px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #alumni-forms.rif-form .first-step .lastname-suffix {
+    flex-direction: column;
+  }
+
+  #alumni-forms.rif-form .first-step .lastname-suffix #suffix {
+    margin-left: 0px;
+  }
+
+  #alumni-forms.rif-form .first-step input[name=lastname] {
+    width: 420px;
+  }
+
+  #alumni-forms.rif-form .wordmark {
+    display: flex;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  #alumni-forms .double-row .privacy-agreement {
+    min-width: 0;
+    width: 90vw;
+    height: auto;
+    margin-bottom: 10px
+  }
+}
+
+@media (max-width: 479px) and (min-width: 361px){
+  #alumni-forms .white-box-shadow {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  #alumni-forms.rif-form .offline .error-box {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 360px ) and (min-width: 321px ) {
+ #alumni-forms .white-box-shadow {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 320px ) {
+  #alumni-forms .white-box-shadow {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  #alumni-forms.rif-form .white-box-shadow {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
